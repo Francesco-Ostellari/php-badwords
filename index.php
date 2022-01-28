@@ -7,7 +7,7 @@ Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
   $string = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi autem inventore soluta fuga eligendi odit beatae repudiandae laboriosam aperiam dignissimos nobis, consequuntur alias odio aut mollitia laborum neque architecto consectetur!";
   $lenString = strlen($string);
   $censuredWord = $_GET['censuredword'];
-  $newString = str_replace($censuredWord, "***", $string);  
+  $newString = str_ireplace($censuredWord, "***", $string);  
   $lenStringCensured = strlen($newString);
 ?>
 
